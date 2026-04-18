@@ -1,19 +1,20 @@
 import Link from "next/link";
+
 export default function Navbar() {
   return (
-    <div>
-      <div className="flex justify-between h-14 border-b items-center">
-        <Link href="/">
-          <h1 className="font-bold text-xl">Wilma Auraruna Khalif</h1>
+    <div className="h-14 w-full border-b border-zinc-800 flex px-5 items-center justify-between fixed bg-background">
+      <Link href="/">
+        <h1 className="text-lg font-semibold tracking-tight">
+          Wilma Auraruna Khalif
+        </h1>
+      </Link>
+      <div className="flex gap-x-5">
+        <Link href="/" className="hover:underline">
+          Home
         </Link>
-        <div className="flex gap-x-5 ">
-          <Link href="/">
-            <p>Home</p>
-          </Link>
-          <Link href="/project">
-            <p>Project</p>
-          </Link>
-        </div>
+        <Link href="/project" className="hover:underline">
+          Project
+        </Link>
       </div>
     </div>
   );
