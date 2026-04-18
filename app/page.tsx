@@ -1,9 +1,10 @@
-import Image from "next/image";
-
+import Hero from "./section/hero";
 export default function Home() {
   return (
     <div>
-      <h1>WOW kEREN</h1>
+      <h1>
+        <Hero></Hero>
+      </h1>
     </div>
   );
 }
